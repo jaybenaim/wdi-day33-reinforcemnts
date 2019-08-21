@@ -4,7 +4,7 @@ def longestConsecutive(strings, k):
     strings_list = [] 
     new_list = [] 
     for i in range(len(strings)): 
-        if len(strings[i]) > len(strings[i-1]):
+        if len(strings[i]) > len(strings[i+1]):
 
             strings_list.append(strings[i])
     for s in range(k): 
